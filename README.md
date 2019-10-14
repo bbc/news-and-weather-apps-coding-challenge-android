@@ -47,7 +47,7 @@ curl -G https://raw.githubusercontent.com/bbc/news-apps-ios-coding-challenge/mas
 ### Considerations
 This is an opportunity to demonstrate your understanding of what modern Android app development looks like. We believe that good contributors to achieving this are typically code readability, unit testing, separation of concerns, the open/closed principle, error handling, and an intuitive, responsive, user interface.
 
-You can write the app in either Kotlin or Java. 
+Please write the app in Kotlin.
 
 Remember we are looking for a demonstration of your skills - not perfection. A comment about what you would do next might be better than squeezing in everything, but not doing anything to your usual standard. We would typically expect this to take you  between 2-3 evenings at most.
 

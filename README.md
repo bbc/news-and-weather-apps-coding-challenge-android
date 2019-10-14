@@ -9,9 +9,9 @@ The designer has asked that the typography be as follows:
 
 Components | Color | Font
 -----------| ------|------
-headline | 0x000000 | large, bold, system font
-last updated | 0x3d3d3d | normal, light, system font, 
-introductory | 0x000000 | normal, regular, system font
+headline | #000000 | bold, 20sp, system font (roboto)
+last updated | #3d3d3d | normal,  12sp, system font (roboto) 
+introductory | #000000 | normal, 14sp, system font (roboto)
 
 The returned timestamp is in epoch time but the design calls for this to be a human readable day, month and year. So, for example, it should show as "1 January 1970" for an epoch timestamp of 0.
 
@@ -19,15 +19,15 @@ The user should also be able to trigger a reload of the data from the server.
 
 ### API
 The list of headlines is available at
-https://github.com/bbc/news-apps-ios-coding-challenge/blob/master/headlines.json
+https://github.com/bbc/news-and-weather-apps-coding-challenge-android/blob/master/headlines.json
 
 ```bash
-curl -G https://raw.githubusercontent.com/bbc/news-apps-coding-challenge/master/headlines.json
+curl -G https://raw.githubusercontent.com/bbc/news-and-weather-apps-coding-challenge-android/master/headlines.json
 ```
 
 ### Analytics
 The product manager needs you to record interaction and network events as people use the app. This can be done by issuing “fire and forget” GET requests to
-https://github.com/bbc/news-apps-ios-coding-challenge/blob/master/analytics
+https://github.com/bbc/news-and-weather-apps-coding-challenge-android/blob/master/analytics
 
 Event specific query parameters should be appended to the URL as follows:
 
@@ -37,11 +37,11 @@ Event specific query parameters should be appended to the URL as follows:
 * `screen=XXX` - an identifier for the screen that was shown
 
 ```bash
-curl -G https://raw.githubusercontent.com/bbc/news-apps-ios-coding-challenge/master/analytics?event=load&time=100
+curl -G https://raw.githubusercontent.com/bbc/news-and-weather-apps-coding-challenge-android/master/analytics?event=load&time=100
 ```
 
 ```bash
-curl -G https://raw.githubusercontent.com/bbc/news-apps-ios-coding-challenge/master/analytics?event=display&screen=XXX
+curl -G https://raw.githubusercontent.com/bbc/news-and-weather-apps-coding-challenge-android/master/analytics?event=display&screen=XXX
 ```
 
 ### Considerations
